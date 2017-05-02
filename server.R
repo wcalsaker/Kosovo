@@ -13,7 +13,7 @@ function(input, output) {
   #     re-executed when inputs change
   #  2) Its output type is a plot
   output$mPlot <- renderPlot({
-  setwd("\\\\moray.jacks.local/william.alsaker/Documents and Settings/My Documents/STAT 702/Final Project")
+  #setwd("\\\\moray.jacks.local/william.alsaker/Documents and Settings/My Documents/STAT 702/Final Project")
  migrate.dat<-read.csv("migrate4.csv", header=T)
    # head(migrate.dat)
     migrate.dat$lvdt2<-as.Date(migrate.dat$lvdt2, "%m/%d/%Y")
